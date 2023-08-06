@@ -9,6 +9,7 @@
     const validPassword = "James5678";
     
     if (username === validUsername && password === validPassword) {
+        alert("Login successful! Please click link");
         // Redirect to the new page if the credentials are correct.
         window.location.href = "new_page.html";
     } else {
