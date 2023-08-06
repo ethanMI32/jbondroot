@@ -1,4 +1,4 @@
-GNU nano 7.2                                                                                                      root1.js                                                                                                               
+                                                                                                              
 document.addEventListener("DOMContentLoaded", function() {
 const loginForm = document.getElementById("login-form");
 const usernameInput = document.getElementById("username");
@@ -13,7 +13,7 @@ loginForm.addEventListener("submit", function(event) {
 
   if (username === "JamesBond" && password === "c6996e1c578bedbdc93664fa3c796deb") {
     alert("Login successful! Please click link");
-    window.location.href="http://10.0.2.15/Root/root2.html";
+    window.location.href=""C:/Users/erick/OneDrive/Desktop/BethelTech_FinalProject/Root/root1.html";
   // Replace this with your actual login logic
   } else {
     alert("Invalid username or password. Please try again.");
