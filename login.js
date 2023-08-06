@@ -5,8 +5,8 @@ function validateCredentials(event) {
     const password = document.getElementById("password").value;
     
     // You can replace these values with the correct username and password.
-    const validUsername = "JamesBond";
-    const validPassword = "Madeleinemylove";
+    const validUsername = "ValdoObruchev";
+    const validPassword = "Primo_bioniceye2021";
     
     if (username === validUsername && password === validPassword) {
         alert("Login successful! Please click button.");
