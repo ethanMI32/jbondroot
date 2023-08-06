@@ -13,7 +13,7 @@ loginForm.addEventListener("submit", function(event) {
 
   if (username === "JamesBond" && password === "JamesBond") {
     alert("Login successful! Please click link");
-    window.location.href="C:/Users/erick/OneDrive/Desktop/BethelTech_FinalProject/Root/root1.html";
+    window.location.href="C:\Users\erick\OneDrive\Desktop\BethelTech_FinalProject\Root\root1.html";
   // Replace this with your actual login logic
   } else {
     alert("Invalid username or password. Please try again.");
