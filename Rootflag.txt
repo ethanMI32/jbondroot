@@ -1,0 +1,22 @@
+1. Run Burpsuite.
+2. Find the password in Burpsuite. Password is hashcode.
+3. Decode password cyberchef ex.
+4. Enter password and go to next page
+5. (Privilege esclation python script) that goes to Lat/Long page
+6. Page shows Latitude and Longitude and gives link to linux link where python script is held
+7. Run python script to find location.
+8. Creating a final html page where I have to enter the name of the location in a container box, click submit. Then the system should punch out a Flag{found}
+
+c5d497e4d69f10f217cb9bb44cf4184e
+
+
+Root Page: Story of No time to die
+Project Heracles
+login to to project heracles to find the location where the origination of nanobots come from.
+
+python script that locates latitute longitude
+
+
+Primo_bioniceye2021
+
+fd62fcac2f8488f3374d4838e4572934
