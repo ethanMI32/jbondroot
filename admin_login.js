@@ -5,13 +5,13 @@ function validateCredentials(event) {
     const password = document.getElementById("password").value;
     
     // You can replace these values with the correct username and password.
-    const validUsername = "John Smith";
-    const validPassword = "Isthisreallysecure";
+    const validUsername = "ValdoObruchev";
+    const validPassword = "Primo_2021";
     
     if (username === validUsername && password === validPassword) {
         alert("Login successful! Please click button.");
         // Redirect to the new page if the credentials are correct.
-        window.location.href = "smithfiles.html";
+        window.location.href = "admin_page.html";
     } else {
         alert("Invalid credentials. Please try again.");
     }
