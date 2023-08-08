@@ -1,7 +1,7 @@
 // JavaScript source code
 var users = [
-    { id: 1, username: "chris", password: "mymoney", Money: "$0" },
-    { id: 2, username: "vesper", password: "parola2", Money: "$5" },
+    { id: 1, username: "John", password: "Smith", Money: "$0" },
+    { id: 2, username: "vesper", password: "lynd", Money: "$5" },
     { id: 3, username: "john", password: "parola3", Money: "$10" },
     { id: 4, username: "james007", password: "parola4", Money: "$15,0000.000" },
     { id: 5, username: "buckye", password: "parola5", Money: "$12" },
