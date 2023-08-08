@@ -1,4 +1,7 @@
 // JavaScript source code
+function validateCredentials(event) {
+    event.preventDefault();
+
 var users = [
     { id: 1, username: "John", password: "Smith", Money: "$0" },
     { id: 2, username: "vesper", password: "lynd", Money: "$5" },
@@ -9,61 +12,13 @@ var users = [
     { id: 7, username: "steve", password: "parola7", Money: "$0" },
     { id: 8, username: "smith", password: "parola8", Money: "$10" }
 ];
+  
 
-function logout() {
-    window.location.href = "http://10.0.2.15/";
-}
-
-function performRedirect() {
-    var nume = document.getElementById("nume").value;
-    var parola = document.getElementById("parola").value;
-
-    var isValid = false;
-    var foundUser = null;
-
-    for (var i = 0; i < users.length; i++) {
-        if (nume === users[i].username && parola === users[i].password) {
-            isValid = true;
-            foundUser = users[i];
-            break;
-        }
-    }
-
-    if (isValid) {
-        window.location.href = "admin_page.html" + encodeURIComponent(foundUser.id);
+    if (username === Username && password === Password) {
+        alert("Login successful! Please click button.");
+        // Redirect to the new page if the credentials are correct.
+        window.location.href = "admin_page.html";
     } else {
-        alert("Incorrect user or/and password");
+        alert("Invalid credentials. Please try again.");
     }
 }
-
-function loadDetails() {
-    var queryString = window.location.search;
-    var urlParams = new URLSearchParams(queryString);
-    var userId = urlParams.get('id');
-
-    var foundUser = users.find(function (user) {
-        return user.id.toString() === userId;
-    });
-
-    if (foundUser) {
-        var userIdElement = document.getElementById('userId');
-        var usernameElement = document.getElementById('username');
-        var MoneyElement = document.getElementById('userMoneyId');
-        var userImageElement = document.getElementById('userImage'); 
-
-        userIdElement.textContent = foundUser.id;
-        usernameElement.textContent = foundUser.username;
-        MoneyElement.textContent = foundUser.Money;
-
-   
-        userImageElement.src = 'images/' + foundUser.username + '.jpg';
-        userImageElement.style.display = 'block'; 
-    } else {
-        var errorMessage = document.createElement('p');
-        errorMessage.textContent = 'Utilizatorul nu a fost găsit.';
-        document.body.appendChild(errorMessage);
-    }
-}
-
-
-loadDetails();
