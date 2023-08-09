@@ -5,8 +5,8 @@ function validateCredentials(event) {
     // List of valid usernames and passwords
     const validCredentials = [
         { username: "ValdoObruchev", password: "Primo_2021" },
-        { username: "james007", password: "y0ug0t1t" },
-        { username: "mrwhite", password: "n0g@m3" }
+        { username: "FranzOberhauser", password: "h@t3b0nd" },
+        { username: "Le Chiffre", password: "Pl@yap0k3r" }
     ];
     // Check if the entered credentials are valid
     const isValidCredential = validCredentials.some(cred => cred.username === username && cred.password === password);
