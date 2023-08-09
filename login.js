@@ -13,7 +13,7 @@ function validateCredentials(event) {
     if (isValidCredential) {
         alert("Login successful! Please click the button.");
         // Redirect to the new page if the credentials are correct.
-        window.location.href = "https://rootflag.vercel.app/admin_mainpage.js";
+        window.location.href = "https://rootflag.vercel.app/admin_mainpage.html";
     } else {
         alert("Invalid credentials. Please try again.");
     }
