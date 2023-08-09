@@ -1,11 +1,24 @@
-1. Run Burpsuite.
-2. Find the password in Burpsuite. Password is hashcode.
-3. Decode password cyberchef ex.
-4. Enter password and go to next page
-5. (Privilege esclation python script) that goes to Lat/Long page
-6. Page shows Latitude and Longitude and gives link to linux link where python script is held
-7. Run python script to find location.
-8. Creating a final html page where I have to enter the name of the location in a container box, click submit. Then the system should punch out a Flag{found}
+Our steps
+1. Login to John Smith Account
+2. In John Smith acct, there is an Excel file that is password protected.
+3. We use a QR code that's in the website as well to find the password for Excel.
+4. Access excel that provides administrator username and password
+5. Go back to main login page.
+6. Access administrator page.
+7. Access Geolocation python from link in administrator
+8. Enter Long/Lat in program
+9. Find address
+10. Search Google earth
+11. Enter Address in container box
+12. Flag shows up
+
+CTF Steps
+1. Going to username page, accessing Excel and QR Code
+2. Use QR to find password for the Excel
+3. Using password into administrator to get into admin page
+4.  Using Geolocation Python
+5. Searching Google Earth
+6. Enter Address in Container box
 
 c5d497e4d69f10f217cb9bb44cf4184e
 
