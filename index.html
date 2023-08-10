@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="rootbond.css">
-    <center><header>Welcome to Project Heracles Laboratory</header></center>
+    <script>
+        function validateCredentials(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+            // List of valid usernames and passwords
+            const validCredentials = [
+                { username: "ValdoObruchev", password: "Primo_2021", page: "admin_mainpage.html" },
+                { username: "FranzOberhauser", password: "h@t3b0nd", page: "MrOberhauser.html" },
+                { username: "Le Chiffre", password: "Pl@yap0k3r", page: "lechiffre.html" }
+            ];
+            
+            // Find the user's entry in the valid credentials list
+            const userEntry = validCredentials.find(cred => cred.username === username && cred.password === password);
+            
+            if (userEntry) {
+                alert("Login successful! Redirecting...");
+                // Redirect to the user's specific page
+                window.location.href = userEntry.page;
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        }
+    </script>
 </head>
 <body>
-    <center>
-    
-    <p>Please state your username and password credentials below to access classified material. Hint: Each username is one of James Bond's nemesis.</p>
-    <h1>Login</h1>
-    <form id="loginForm" onsubmit="validateCredentials(event)">
+    <form onsubmit="validateCredentials(event)">
         <label for="username">Username:</label>
-        <input type="text" id="username" required><br>
+        <input type="text" id="username" required><br><br>
         
         <label for="password">Password:</label>
-        <input type="password" id="password" required><br>
-        <input type="submit" value="Login" onclick="validateCredentials()">
+        <input type="password" id="password" required><br><br>
+        
+        <button type="submit">Login</button>
     </form>
-    <script src="login.js"></script>
-    <p><img src="https://summerbodynowdotcom.files.wordpress.com/2018/04/screenshot_20180429-1018062908226264.jpg?w=948"></img></p>
-    </center>
 </body>
 </html>
