@@ -8,7 +8,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
     container.textContent = infoInput;
     document.body.appendChild(container);
 
-    if (infoInput === "Islands of Japan") {
+    if (infoInput === "The Sea of Japan") {
       alert("Terroist has been found! Flag is cyber007{Lustifyarian_Safin}");
     } else {
       alert("Invalid username or password. Please try again.");
