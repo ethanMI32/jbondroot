@@ -9,7 +9,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
     document.body.appendChild(container);
 
     if (infoInput === "The Sea of Japan") {
-      alert("Terroist has been found! Flag is cyber007{Lustifyarian_Safin}");
+      alert("Terroist has been found! Flag is cyber007{Lyutsifer Safin}");
     } else {
       alert("Invalid username or password. Please try again.");
     }
