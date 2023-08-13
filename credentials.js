@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const loginForm = document.getElementById("loginForm");
 
     const validCredentials = {
-        "LeChiffre": "Pl@yap0k3r",
+        "LeChiffre": "K3ys0fp0w3r",
         "LadyM": "S@ft3ypriority",
         "VesperLynd": "LuvB0nd",
         "FelixLeiter": "b0rn1nus@",
