@@ -6,7 +6,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
     container.textContent = infoInput;
     document.body.appendChild(container);
 
-    if (infoInput === "The Sea of Japan") {
+    if (infoInput === "Sea of Japan") {
       alert("Congratulations!! The nanobot factory farm has been found and destroyed!! The terrorist has been kill! Flag is cyber007{Lyutsifer Safin}");
     } else {
       alert("Invalid username or password. Please try again.");
