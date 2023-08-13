@@ -1,20 +1,16 @@
 document.getElementById("submitButton").addEventListener("click", function() {
     // Get the input value
     const infoInput = document.getElementById("infoInput").value;
-
-    // Now you can do whatever you want with the entered information.
-    // For example, you can display it in a container on the same page:
+    
     const container = document.createElement("div");
     container.textContent = infoInput;
     document.body.appendChild(container);
 
     if (infoInput === "The Sea of Japan") {
-      alert("Terroist has been found! Flag is cyber007{Lyutsifer Safin}");
+      alert("Congratulations!! The nanobot factory farm has been found and destroyed!! The terrorist has been kill! Flag is cyber007{Lyutsifer Safin}");
     } else {
       alert("Invalid username or password. Please try again.");
     }
-    // If you want to submit the information to a server, you can use AJAX or a form submission:
-    // For example, using Fetch API for sending data to a server:
     /* fetch('https://example.com/submit', {
         method: 'POST',
         body: JSON.stringify({ info: infoInput }),
